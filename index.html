@@ -16,10 +16,20 @@
 		<p>
 			Hacker und andere Betrüger haben immer neue Wege, um Daten zu klauen. Deswegen müssen wir immer aufmerksam sein, besonders für ein IT-Unternehmen. Solche Mails sind nicht immer einfach zu erkennen, deswegen haben wir auf der folgenden Seite Tipps zusammengefasst, womit du dich am besten vorbereiten kannst. 
 		</p>
-		<p>
-			<a href="link">Mehr Informationen zum Thema Phishing</a>
-		</p>
+
+		<p id="clickCount">0 Personen haben geklickt.</p>
+ 
+
+    <script>
+        let clickCount = localStorage.getItem('clickCount')||0;
+
+        document.getElementById('clickCount').innerText =clickCount + " haben auch geklickt";
+
+    </script>
+
+
 	</section>
+
 
 </body>
 </html>
